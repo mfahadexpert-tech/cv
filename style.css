@@ -1,0 +1,260 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 15px;
+    background: #d4d4d4;
+    font-family: Arial, sans-serif;
+}
+
+/* WHITE CV PAGE */
+.cv {
+    width: 650px;
+    max-width: 100%;
+    min-height: 850px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 5px 20px #c59595;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+/* HEADER DESIGN */
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px 40px 10px 45px;
+    height: 180px;
+}
+
+/* PROFILE PICTURE */
+.profile {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+/* PEACH HEADER BOX */
+.name-box {
+    background-color: #f7b087;
+    padding: 20px 25px 20px 45px;
+    border-radius: 28px;
+    margin-left: -20px;
+    flex: 1;
+    min-height: 135px;
+}
+
+/* NAME */
+.name-box h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+/* CONTACT DETAILS */
+.name-box p {
+    font-size: 11px;
+    margin: 4px 0;
+    color: #444;
+}
+
+
+/* CIRCULAR PROFILE IMAGE */
+.profile {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: 5px solid white;
+    flex-shrink: 0;
+}
+
+/* PEACH NAME BACKGROUND */
+.name-box {
+    background: #f7b087;
+    padding: 22px 30px 22px 45px;
+    border-radius: 28px;
+    margin-left: -18px;
+    flex: 1;
+    min-height: 135px;
+}
+
+.name-box h1 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: black;
+}
+
+.name-box p {
+    font-size: 11px;
+    margin: 3px 0;
+    color: #444;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+.main {
+    display: flex;
+    align-items: stretch;
+}
+
+/* LEFT GRAY SIDEBAR */
+
+/* LEFT SIDEBAR */
+.sidebar {
+    width: 42%;
+    background-color: #e8e6e6;
+
+    padding: 20px 25px 60px 50px;
+
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+    min-height: 530px;
+}
+
+/* SUMMARY PARAGRAPH */
+.sidebar p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* SIDEBAR HEADINGS */
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* RIGHT WHITE SECTION */
+.right-content {
+    width: 58%;
+    background: white;
+    padding: 20px 35px 30px 20px;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 20px;
+    color: black;
+    margin: 0 0 10px;
+}
+
+.sidebar h2:not(:first-child),
+.right-content h2:not(:first-child) {
+    margin-top: 25px;
+}
+
+/* PARAGRAPHS */
+.sidebar p,
+.right-content p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+li {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* ORANGE SKILL BARS */
+
+/* SKILL BAR CONTAINER */
+.skill-bar {
+    width: 100%;
+    height: 9px;
+    background-color: white;
+    border: 1px solid #ff873b;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+/* ORANGE PROGRESS */
+.fill {
+    height: 100%;
+    background-color: pink;
+}
+
+
+/* SMALL SCREEN */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px;
+        height: auto;
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name-box {
+        padding: 15px 15px 15px 25px;
+    }
+
+    .name-box h1 {
+        font-size: 16px;
+    }
+
+    .sidebar {
+        padding: 20px;
+        background-color: lightblue;
+    }
+
+    
+/* RIGHT CONTENT */
+.right-content {
+    width: 58%;
+    background-color: lightyellow;
+    padding: 20px 35px 30px 20px;
+}
+
+/* RIGHT HEADINGS */
+.right-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* RIGHT PARAGRAPHS */
+.right-content p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* BULLET LISTS */
+.right-content ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.right-content li {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+}
